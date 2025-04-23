@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #0c0c0c;
+  --sub-heading: #e7e7e7;
+  --highlighter: #d69cf4;
+  --gradient-card: #1e1e1e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color); /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d69cf4; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Border radius of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(
+    --color-septenary
+  ); /* Color of the scrollbar thumb on hover */
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+  color: white;
+}
+
+.header {
+  border-bottom-width: 1px;
+  border-color: rgba(255, 255, 255, 0.09);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-top-width: 0px;
+  backdrop-filter: blur(30px);
+  background: linear-gradient(
+      rgba(12, 12, 12, 0.051) 0%,
+      rgba(12, 12, 12, 0.05) 100%
+    )
+    rgba(12, 12, 12, 0.05);
+  width: 100%;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+}
+
+.MyGradient {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
